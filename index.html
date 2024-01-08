@@ -1,0 +1,1931 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+        content="Global LifeTech Academy is the Best Training Institution in Bangalore with 100% sucess rate. Our Courses: Python or Java FullStack, Angular, ReactJS,AI , Machine Learning ,AWS,DevOps,MEAN/MERN Stack Development,  Apps Development."
+        name="description">
+    <meta content="Software Training institution in Bangalore,
+                      FullStack Web development training course in Bangalore,
+                      Reactjs development training course in Bangalore,
+                      AWS & Devops course in Bangalore,
+                      MEAN Stack training course in Bangalore
+                      Python certification Course in Bangalore" name="keywords">
+
+    <script src="https://kit.fontawesome.com/43df530aea.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="x-icon" href="glt/head.png">
+    <!-- new -->
+    <link rel="stylesheet" type="text/css" href="https://www.achieversit.com/assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://www.achieversit.com/assets/css/drop-a-query.css">
+    <!-- <link rel="shortcut icon" href="https://www.achieversit.com/assets/images/favicon.jpg"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-501373573-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-310305648"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+        viewBox="0 0 16 16">
+        <path
+            d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+    </svg>
+
+    <!--  -->
+
+    <title>Global LifeTech Academy is Best Software Training Institution in Bangalore</title>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            /* line-height: 1.5; */
+        }
+
+        .login-popup {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1099;
+            background-color: rgba(0, 0, 0, 0.6);
+            visibility: hidden;
+            opacity: 0;
+            transition: all 1s ease;
+        }
+
+        .login-popup.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .login-popup .box {
+            background-color: #ffffff;
+            border-radius: 20px;
+            /* padding-top: 15px;
+            padding-bottom: 15px; */
+            padding: 20px;
+            width: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            /* display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; */
+            opacity: 0;
+            margin-left: 50px;
+            transition: all 1s ease;
+
+        }
+
+        .box form {}
+
+        .login-popup.show .box {
+            opacity: 1;
+            margin-left: 0;
+        }
+
+        .login-popup .box .img-area h1 {
+            font-size: 30px;
+        }
+
+        @keyframes zoomInOut {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .login-popup .box .form {
+            flex: 0 0 50%;
+            max-width: 100%;
+            /* padding:40px 30px; */
+
+        }
+
+        .login-popup .box .form h1 {
+            color: #000000;
+            font-size: 30px;
+            margin: 0 0 30px;
+        }
+
+        .form input {
+            width: 100%;
+        }
+
+        .login-popup .box .form .form-control {
+            height: 45px;
+            margin-bottom: 20px;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #cccccc;
+            font-size: 15px;
+            color: #000000;
+        }
+
+        .login-popup .box .form .form-control:focus {
+            outline: none;
+        }
+
+        .login-popup .box .form label {
+            font-size: 15px;
+            color: #555555;
+        }
+
+        .login-popup .box .form #button_tag {
+            width: 100%;
+            /* background-color: #142453; */
+            margin-top: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .login-popup .box .form .btn:focus {
+            outline: none;
+        }
+
+        .login-popup .box .form .close {
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        /*responsive*/
+        @media(max-width: 767px) {
+            .login-popup .box {
+                width: calc(100% - 30px);
+            }
+
+            .login-popup .box .img-area {
+                display: none;
+            }
+
+            .login-popup .box .form {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+
+        .abc {
+            background: none;
+            background-image: linear-gradient(to right, rgb(21, 209, 209), rgb(123, 240, 21));
+        }
+
+        .abc:hover {
+            background: none;
+            background-image: linear-gradient(to right, rgb(123, 240, 21), rgb(21, 209, 209));
+        }
+    </style>
+</head>
+<!-- <marquee behavior="" direction=""></marquee> -->
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+    <div style=" background-color: orange;color: white;position: absolute;top: 0;left: 0;right: 0;">
+        <marquee width="100%" direction="right" behavior="alternate" height="18px"
+            style="font-size: 14px;font-weight: bolder;">
+            <!-- <h4 style="color: white;"> Our Special Offer - Get 3 Courses at 24,999/- Only.</h4> -->
+            Our Special Offer - Get 3 Courses at 24,999/- Only.
+        </marquee>
+    </div>
+    <!-- TOP NAV -->
+    <div class="top-nav" style="background-color: #142453;">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-sm-10">
+                    <p><a href="#" style="text-decoration: none; color: white;"><i class='bx bxs-envelope'></i>
+                            globallifetech@gmail.com</a> </p>
+                    <p> <a href="tel:+918618561276" style="text-decoration: none; color: white;">
+                            <i class='bx bxs-phone-call border-start border-black' style="padding: 5px;"></i>
+                            +91 8618561276</a></p>
+                   
+
+                </div>
+                <div class="col-sm-2">
+                 
+                    <a class="text-white chat_with_us_b1" style="text-decoration: none;" target="_blank"
+                        href="https://api.whatsapp.com/send?phone=918618561276&amp;text=Hello,%20I%20have%20a%20question%20about%20">
+                        <i style="color:white; font-size: 20px;" class="fa fa-whatsapp" aria-hidden="true"></i>
+                        WhatsApp Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="glt/glt1.png" style="margin: 0;font-weight: bold;font-size: 200px;" width="300px"
+                    height="50px" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-secondary dropdown-toggle abc" style="border: none;" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recommended Courses
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item " href="../pages/pythonfullstack.html">Python FullStack Master
+                                    Program</a></li>
+                            <li><a class="dropdown-item" href="../pages/javafullstack.html">Java FullStack Master
+                                    Program</a>
+                            </li>
+                            <li><a class="dropdown-item" href="../pages/devops.html">Devops Master Program</a></li>
+                            <li><a class="dropdown-item" href="../pages/aws.html">AWS Master Program</a></li>
+                            <!-- <li><a class="dropdown-item" href="Datascience.html">Data Science Master Program</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="">Oracle Training</a></li>
+                            <li><a class="dropdown-item" href="">SAP Training</a></li> -->
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Popular Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li> -->
+
+                </ul>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#contact-model"
+                    class="btn btn-brand ms-lg-3 text-white abc" style="border: none;">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SLIDER -->
+    <div class="owl-carousel owl-theme hero-slider">
+        <div class="slide slide1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h6 class="text-white text-uppercase">Global LifeTech Academy</h6>
+                        <h4 class="display-3 my-2" style="font-size: 50px;">Best Classroom & online Training institute
+                        </h4>
+                        <a href="#" data-bs-toggle="modal" style="border: none;" data-bs-target="#contact-model"
+                            class="btn btn-brand text-white abc">Get
+                            Started</a>
+                        <!-- <a href="#" class="btn btn-outline-light ms-3">Our work</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide slide2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center text-white">
+                        <h6 class="text-white text-uppercase">Global LifeTech Academy</h6>
+                        <h2 class="display-3 my-2" style="font-size: 50px;">We Ensure a Better Education<br />For a
+                            Better world</h2>
+                        <a href="#" data-bs-toggle="modal" style="border: none;" data-bs-target="#contact-model"
+                            class="btn btn-brand text-white abc">Get
+                            Started</a>
+                        <!-- <a href="#" class="btn btn-outline-light ms-3">Our work</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-2 shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+        <div class="container text-center">
+            <div class="row">
+                <!-- <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
+                    <div class="counter">
+                        <h3 class="me-3 text-primary counter-value">1 Million+</h3>
+                        <h5 class="text-white mt-1">Students Erolled</h5>
+                    </div>
+                </div> -->
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                    <div class="counter">
+                        <h1 class="me-3 text-danger counter-value"><strong>1 M<span
+                                    style="border-bottom: 4px solid #142453;">ill</span>ion<b>+</b></strong></h1>
+                        <h5 class="text-dark mt-1 font-15">Students Enrolled</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
+                    <div class="counter">
+                        <h1 class="me-3 mx-4 counter-value" style="color: #142453;"><strong>3<b>+</b></strong></h1>
+                        <h5 class="text-dark mt-1 font-15">Overall Branches</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
+                    <div class="counter">
+                        <h1 class="me-3 counter-value" style="color: #142453;"><strong>1000<b>+</b></strong></h1>
+                        <h5 class="text-dark mt-1 font-15">Placed Students</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
+                    <div class="counter">
+                        <h1 class="me-3 counter-value" style="color: #142453;"><strong>10<b>+</b></strong></h1>
+                        <h5 class="text-dark mt-1 font-15">Years of Experience</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <!-- <section id="about"> -->
+    <div class="container" style="margin-top: 30px;">
+        <h2 class="text-center" style="font-size: 35px;"><strong><span style="color: #142453;">Global LifeTech</span>,
+                No.1
+                Software(IT) Training Institute in
+                Bengaluru </strong></h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button text-dark" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Introduction About Global LifeTech
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <b class="background-color:#142453;">Global LifeTech </b>is a leading Training
+                                        and Placement
+                                        company managed by IT veterans with more than a decade of experience in leading
+                                        MNC companies. We are spread across cities like Chennai, Bangalore. We are known
+                                        for our practical approach towards training that enables students to gain
+                                        real-time exposure on competitive technologies. Training is offered by employees
+                                        from MNCs to give real corporate exposure to the students.Provides a wide group
+                                        of opportunities for freshers and Experienced candidate their skills and build
+                                        their career opportunities across multiple Companies.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                        style="color: #142453;">
+                                        Why we are NO.1
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The <b style="color: #142453;">Global LifeTech </b> delivers world-class
+                                        research,
+                                        learning and teaching that transforms the knowledge, action and leadership
+                                        needed for more equitable and sustainable development globally.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Global LifeTech Training & Certification course
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <b style="color: #142453;">Global LifeTech </b> Helped more than 50,000+
+                                        students and
+                                        professionals to start & shift their Career into IT
+                                        We enroll only 7-10 students per batch so that individual attention to each and
+                                        every student is guaranteed
+                                        We have placement tie-up with more than 1500+ companies. Our Placement team
+                                        works tirelessly to help you get your dream IT job!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <!-- <div class="container">    -->
+                <div class="card" style="background-color: #cacacb;">
+                    <article class="card-body mx-auto" style="max-width: 400px;">
+                        <h5 class="card-title mt-3 text-center" style="font-size: 20px;color: #142453;"><strong>Request
+                                for Classroom & Online
+                                Training</strong></h5>
+                        <p class="text-center"></p>
+
+                        <form onsubmit="IndexRequestQuery(event)">
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i style="padding: 6px;padding-right: 10px;" class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input class="form-control" id="index_name" required placeholder="Full name" type="text"
+                                    style="background-color: white;">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i style="padding: 6px;padding-bottom: 8px;"
+                                            class="fa fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input name="" class="form-control" id="index_email" required
+                                    placeholder="Email address" type="email" style="background-color: white;">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i
+                                            style="padding: 6px;font-size: 15px;padding-bottom: 8px;padding-right: 8px;"
+                                            class="fa fa-phone"></i>
+                                    </span>
+                                </div>
+
+                                <input name="" class="form-control" id="index_mobile" required
+                                    placeholder="Phone number" type="text" style="background-color: white;">
+                            </div>
+                            <div class="form-group input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"> <i
+                                            style="padding: 6px;padding-bottom: 8px;padding-right: 10px;"
+                                            class="fa fa-building"></i>
+                                    </span>
+                                </div>
+                                <input name="" class="form-control" id="index_course" required
+                                    placeholder="Enter Course Name" type="text" style="background-color: white;">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <button type="submit" class="btn abc" style="color: white;border: none;width: 100%;">
+                                    Get
+                                    Quotes</button>
+                            </div>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <div class="col-md-12 we-top pad-30  text-center text-blue mTB-30">
+        <h1 class="font-bold font-xs-25 course-titles" style="color: #142453;">Why We are on No.1 ?</h1>
+        <h6 class="">More people train with Global LifeTech because of our commitment to quality, Placement Support, and
+            Real-time Training.</h6>
+        <div class="col-md-12 padLR-75 we-top-cards mT-30 pad-xs-0 pad-sm-0">
+            <div class="row">
+                <div class="col-md-3 col-12 pad-10 text-center  we-top-cards-1">
+                    <div class="we-top-content c-1  pad-30-20 b-shadow pad-sm-20">
+                        <h2 class="font-50 font-sm-25"><strong>135 +</strong></h2>
+                        <h6 class="text-lightgrey font-sm-12">TRENDING COURSES</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 pad-10 text-center  we-top-cards-1">
+                    <div class="we-top-content c-1 pad-20 b-shadow pad-sm-10">
+                        <h2 class="font-50 font-sm-25"><strong>100 +</strong></h2>
+                        <h6 class="text-lightgrey font-sm-12">IT Companies are tied-UP to hire our trained
+                            students</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 pad-10 text-center   we-top-cards-1">
+                    <div class="we-top-content c-1  pad-20 b-shadow pad-sm-10">
+                        <h2 class="font-50 font-sm-25"><strong>25 +</strong></h2>
+                        <h6 class="text-lightgrey font-sm-12">Students attending Interview everyday
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 pad-10 text-center we-top-cards-1">
+                    <div class="we-top-content c-1  pad-20 b-shadow pad-sm-10">
+                        <h2 class="font-50 font-sm-25"><strong>10 +</strong></h2>
+                        <h6 class="text-lightgrey font-sm-12">Years of Experience
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Trending courses -->
+
+    <h3 class="padLR-20 text-center pad-sm-0" id="services"><strong class="know-us-font"
+            style="color: #142453;">TRENDING COURSES</strong></h3>
+    <hr class="hidden-md visible-xs"> 
+    <!--TRENDING COURSES CARDS STARTS HERE-->
+    <div class="col-md-12 trending-cards mB-45 d-flex trend2">
+        <div class="row">
+            <!--CARD 1-->
+            <div class="col-md-3 pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card">
+                    <!-- <a href="fullstack_page.html"> -->
+                    <div class="pad-10  text-white no-pad-B" style="background-color: #b3b300;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span>
+                                    <img src="https://img.icons8.com/?size=2x&id=VZfYlLgRZtdK&format=png" alt="">
+                                </span></div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5><strong class="text-uppercase text-white">Python
+                                        FullStack<br><span>DEVELOPMENT</span></strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                Python FullStack is popular for making dynamic applications and its
+                                information
+                                official
+                                and reliance infusion includes altogether lessen the measure of code that
+                                should
+                                be composed. It is being utilized broadly by devlopers for building web,
+                                mobile
+                                and other applications.
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 5.0
+                                </span><span> (257)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+
+                            <p class="font-12 mbottom-5 text-white">
+                                <li class="font-12 mbottom-5 text-white">FrontEnd
+                                    <ol>
+                                        <li>HTML & HTML5</li>
+                                        <li>CSS & CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>React & Redux</li>
+                                        <li>BootStrap</li>
+                                    </ol>
+                                </li>
+                            </p>
+
+                            <p class="font-12 mbottom-5 text-white">
+                                <li class="font-12 mbottom-5 text-white">Backend
+                                    <ol>
+                                        <li>Python [core + adv]</li>
+                                        <li>Django Framework</li>
+                                        <li>Tkinter Framewrok</li>
+
+                                    </ol>
+                                </li>
+                            </p>
+                            <p class="font-12 mbottom-5 text-white">
+                                <li class="font-12 mbottom-5 text-white">DataBase
+                                    <ol>
+                                        <li>MySQL</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MongoDB</li>
+                                    </ol>
+                                </li>
+                            </p>
+
+
+
+
+
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/pythonfullstack.html" class="btn btn-viewdetails text-white">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!--CARD 2-->
+            <div class="col-md-3 pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card">
+                    <!-- <a href="fullstack_page.html"> -->
+                    <div class="pad-10 text-white no-pad-B" style="background-color:#cc2900;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span><img
+                                        src="https://img.icons8.com/?size=2x&id=aNnXVGkz2Uuu&format=png" alt=""></span>
+                            </div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5><strong class="text-uppercase text-white">Java
+                                        FullStack<br><span>DEVELOPMENT</span><br><span>COURSE</span></strong>
+                                </h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                Java FullStack is popular for making dynamic applications and its
+                                information
+                                official
+                                and reliance infusion includes altogether lessen the measure of code that
+                                should
+                                be composed. It is being utilized broadly by devlopers for building web,
+                                mobile
+                                and other applications.
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 5.0
+                                </span><span> (292)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+
+                            <p class="font-12 mbottom-5 text-white">
+                                <li class="font-12 mbottom-5 text-white">FrontEnd
+                                    <ol>
+                                        <li>HTML & HTML5</li>
+                                        <li>CSS & CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>React & Redux</li>
+                                        <li>BootStrap</li>
+                                    </ol>
+                                </li>
+                            </p>
+
+                            <p class="font-12 mbottom-5 text-white">
+                                <li class="font-12 mbottom-5 text-white">Backend
+                                    <ol>
+                                        <li>Java [core + adv]</li>
+                                        <li>J2EE</li> <!-- <li>Tkinter Framewrok</li> -->
+
+                                    </ol>
+                                </li>
+                            </p>
+                            <p class="font-12 mbottom-5 text-white">
+                                <li class="font-12 mbottom-5 text-white">DataBase
+                                    <ol>
+                                        <li>MySQL</li>
+                                        <li>PostgreSQL</li>
+                                        <li>MongoDB</li>
+                                    </ol>
+                                </li>
+                            </p>
+
+
+
+
+
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/javafullstack.html" class="btn btn-viewdetails" style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!--CARD 3-->
+
+
+            <!--CARD 4-->
+            <div class="col-md-3 pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card ">
+                    <!-- <a href="Devops_page.html"> -->
+                    <div class="pad-10 text-white no-pad-B" style="background-color: #990099;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span>
+                                    <img src="https://img.icons8.com/?size=2x&id=33039&format=png" alt=""></span>
+                            </div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5><strong class="text-uppercase text-white">AWS
+                                        <br><span>Training</span><br><span>Bengaluru</span></strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                AWS certification training course will help you learn DevOps and master
+                                various
+                                software development, operations, continuous integration, continuous
+                                delivery,
+                                automated build, test, and deployment.
+                                In this best DevOps training course, you will learn DevOps tools and more,
+                                also gain
+                                exposure to Industry best practices, Aptitude & SoftSkills.
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 4.5
+                                </span><span> (196)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Web Services Basics
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Computer Services
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Network Services
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Storage Services
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Database Services
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Analytics Services
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Application Services
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Amazon Web Services Resources
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/aws.html" class="btn btn-viewdetails " style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!--CARD 5-->
+            <div class="col-md-3  pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card ">
+                    <!-- <a href="fullstack_page.html"> -->
+                    <div class="pad-10  text-white no-pad-B" style="background-color: #3d0099;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span><i
+                                        class="fas fa-fire-alt   font-60 font-sm-50"></i></span></div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5>
+                                    <strong class="text-light">
+                                        Devops<br>
+                                        <span>Training</span><br>
+                                        <span>Bengaluru</span>
+                                    </strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                Devops certification training course will help you learn DevOps and master
+                                various
+                                software development, operations, continuous integration, continuous
+                                delivery,
+                                automated build, test, and deployment.
+                                In this best DevOps training course, you will learn DevOps tools and more,
+                                also gain
+                                exposure to Industry best practices, Aptitude & SoftSkills.
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 4.5
+                                </span><span> (192)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Linux fundamentals
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Jenkins
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Docker
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Kubernetes
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Ansible
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Puppet
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Nagios
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Splunk & Git
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/devops.html" class="btn btn-viewdetails " style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!--CARD 6-->
+            <div class="col-md-3 pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card ">
+                    <!-- <a href="fullstack_page.html"> -->
+                    <div class="pad-10 text-white no-pad-B" style="background-color: #730099;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span><i
+                                        class="fas fa-globe font-60 font-sm-50"></i></span></div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5><strong
+                                        class="text-white">WEB<br><span>DEVELOPMENT</span><br><span>COURSE</span></strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                With LifeTech UI development course in bangalore, you will be able to
+                                master the concepts such as CSS3, CSS, HTML, JavaScript, Bootstrap, HTML5,
+                                JQuery, Angular/ReactJS etc. We will also provide you with real-time
+                                projects to
+                                work on and this will enhance your skills and experience. Complete your
+                                dream of
+                                working for top multinational companies.Below are the benifits from top UI
+                                Development training institute in Bangalore.
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 5.0
+                                </span><span> (312)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Basics Of Web Development Traning in Bangalore
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Course Objectives
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    HTML 4 & Older Versions
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    HTML 5 & Overview.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    CSS2 & CSS3
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Javascript, Advanced Javascript, Jquery & more..
+                                </p>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/javafullstack.html" class="btn btn-viewdetails " style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!--CARD 7-->
+            <div class="col-md-3 no-padding pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card ">
+                    <!-- <a href="Datascience_page.html"> -->
+                    <div class="pad-10 text-white no-pad-B" style="background-color: #e68a00;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span>
+                                    <img src="https://img.icons8.com/?size=2x&id=83IWFlQhyRNZ&format=png" alt="">
+                                </span></div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5><strong
+                                        class="text-uppercase text-white">Data<br><span>Science</span><br><span>COURSE</span></strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                The future for Data Science is promising, and its scope in the upcoming
+                                future .
+                                We train students for interviews and Offer Placements in corporate companies
+                                Suitable for Graduates and Experienced Candidates from any Technical
+                                Background
+                                Trainers have more than 10+ years of experience in the Data Science Master
+                                Programming domain
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 4.8
+                                </span><span> (178)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Data Science With R Program
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Data Science with Python
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Machine Learning
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Tableau Training
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Big Data Hadoop and Spark Developer
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Data Science Capstone
+                                </p>
+                            </li>
+
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/pythonfullstack.html" class="btn btn-viewdetails "
+                                style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!---card 7a -->
+            <div class="col-md-3 pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card">
+                    <!-- <a href="fullstack_page.html"> -->
+                    <div class="pad-10  text-white no-pad-B" style="background-color: #00cca3;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-15-20 pad-sm-10-15 trend-card-head "> <span><i
+                                        class="fab fa-react   font-60 font-sm-50"></i></span></div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" width="100px" height="50px" class="bestseller">
+                                <h5>
+                                    <strong class="text-uppercase text-white">REACT<br>
+                                        <span>DEVELOPMENT</span><br>
+                                        <span>COURSE</span>
+                                    </strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">LifeTech provides
+                                React
+                                JS Certification Course in Bangalore. We teach you detailed
+                                explanations of JSX, Unidirectional data flow and Flux, Components etc. Our
+                                instructor-led training to understand and build React components and
+                                structure
+                                applications with Redux. </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 4.6
+                                </span><span> (175)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">Various types of Front libraries.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">Understanding the Front-end
+                                    technology
+                                    stack.</p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">Understanding Back end technology
+                                    stack.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Various Database types & more...</p>
+                            </li>
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/pythonfullstack.html" class="btn btn-viewdetails "
+                                style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+            <!--CARD 8-->
+            <div class="col-md-3 no-padding pad-20 pad-xs-0 col-sm-4 pad-sm-10">
+                <div class="trend-card ">
+                    <!-- <a href="Artificial_intelligence.html"> -->
+                    <div class="pad-10 text-white no-pad-B" style="background-color: #1a8cff;">
+                        <div class="row">
+                            <div class="col-md-3 col-3 pad-25 pad-sm-10-15 trend-card-head "
+                                style="display:flex;align-items:center;padding:15px"> <span>
+                                    <img src="https://img.icons8.com/?size=2x&id=116994&format=png" width="200px"
+                                        height="50px" alt="">
+                                </span></div>
+                            <div class="col-md-9 col-9 pad-15-20 pad-sm-10-15">
+                                <img src="https://d1jnx9ba8s6j9r.cloudfront.net/imgver.1591965497/img/best-seller-min.svg"
+                                    alt="best seller online training" class="bestseller">
+                                <h5><strong class="text-uppercase text-white">Artificial
+                                        Intelligence<br><span>COURSE</span></strong>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-n bradius-0">
+                        <div class="card-body pad-15">
+                            <h7 class="text-black justify text-ellipsis font-12">
+                                Learning Concepts: AI- Artifical Intelligence Concepts, Data Science with
+                                Python,
+                                Machine Learning, Deep Learning with Keras and TensorFlow, Advanced Deep
+                                Learning
+                                and Computer Vision etc.
+                                For Corporate, we act as one stop recruiting partner. We provide right
+                                skilled
+                                candidates who are productive right from day one
+
+                            </h7>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="trend-card-reviews text-black">
+                                <h6><i>Reviews</i></h6>
+                                <span class="review-icons text-yellow"><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i></span><span> 4.6
+                                </span><span> (179)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-description pad-20">
+                        <!-- <p class="font-12 mbottom-5 text-white"><i>Next Batch</i></p>
+                 <h6 class="font-bold text-white">In 5 Days - 1st Sep</h6> -->
+                        <p class="font-12 mbottom-5 text-white"><i>What Will I Learn ?</i></p>
+                        <ul class="text-white">
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    About the course.
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Data Science with Python
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Machine Learning
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Deep Learning with Keras
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    TensorFlow
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Advanced Deep Learning
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    Natural Language Processing (NLP)
+                                </p>
+                            </li>
+                            <li>
+                                <p class="font-12 mbottom-5 text-white">
+                                    AI capstone project
+                                </p>
+                            </li>
+
+
+                        </ul>
+                        <div class="text-center">
+                            <a href="/pages/pythonfullstack.html" class="btn btn-viewdetails "
+                                style="color: white;">VIEW
+                                DETAILS</a>
+                        </div>
+                    </div>
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ENROLL VIEW ALL COURSE BANNER STARTS HERE-->
+    <div class="col-md-12 no-padding-lr text-center mTB-50 pad-25 mT-xs-0 mT-sm-0 abc">
+        <h5 class="font-bold text-white pad-10 line-h-1 know-us-font">Enroll, Learn, Grow, Repeat! Get ready to
+            achieve
+            your learning goals with Global LifeTech
+        </h5>
+        <!-- a href="#" data-bs-toggle="modal" data-bs-target="#contact-model" -->
+        <a class="btn-white" a href="#" data-bs-toggle="modal" data-bs-target="#contact-model">CONTACT US</a>
+        <!-- <a class="btn-white" onclick="contactus('enrol_learn_grow_repeat','Contact Us')">CONTACT US</a> -->
+    </div>
+
+
+
+
+    <!--AIT EDGE STARTS HERE-->
+    <div class="col-md-12 ait-edge padLR-75 pad-xs-10 mTb-xs-20 mTB-50 mT-sm-10 pad-sm-20">
+        <h3 class="padLR-10 mB-30 text-center mB-xs-10 mb-sm-0"><strong class="know-us-font" style="color: #142453;"
+                id="portfolio">Key Features
+            </strong></h3>
+        <hr class="hidden-md visible-xs">
+        <div class="row pad-xs20  min-xs-h150">
+            <div class="col-md-3 col-6 text-center pad-10  mB-xs-10">
+                <div class="b-xs-shadow pad-xs-5 min-xs-h150">
+                    <div class="pad-15 pad-xs-10"><i class="fas fa-check-circle svg-inline--fa1 font-65 font-xs-45"></i>
+                    </div>
+                    <h6 class="font-bold font-xs-15">Learn From Scratch</h6>
+                    <h7 class="font-xs-12">With Live Instructors</h7>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center pad-10  mB-xs-10">
+                <div class="b-xs-shadow pad-xs-5 min-xs-h150">
+                    <div class="pad-15 pad-xs-10"><i class="fas fa-infinity svg-inline--fa3  font-65 font-xs-45"></i>
+                    </div>
+                    <h6 class="font-bold font-xs-15">Industry Expert Faculties</h6>
+                    <h7 class="font-xs-12">With Live Instructors</h7>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center pad-10  mB-xs-10">
+                <div class="b-xs-shadow pad-xs-5 min-xs-h150">
+                    <div class="pad-15 pad-xs-10 text-grade-a">
+                        <h1 class="svg-inline--fa2 mbottom-0 font-xs-45" style="font-size: 54px;">24/7</h1>
+                    </div>
+                    <h6 class="font-bold font-xs-15">Experts Available</h6>
+                    <h7 class="font-xs-12">With Live Instructors</h7>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center pad-10  mB-xs-10">
+                <div class="b-xs-shadow pad-xs-5 min-xs-h150">
+                    <div class="pad-15 pad-xs-10"><i class="fas fa-chart-line svg-inline--fa4 font-65 font-xs-45"></i>
+                    </div>
+                    <h6 class="font-bold font-xs-15">100% Job Oriented Training</h6>
+                    <h7 class="font-xs-12">With Live Instructors</h7>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--OUR TRAINERES FROM-->
+    <div class="col-md-12 padLR-75 trainers pad-xs20 mTB-30 pad-sm-20">
+        <h3 class="padLR-10 mB-30 text-center mB-xs-10 mb-sm-0"><strong class="know-us-font" style="color: #142453;">Our
+                Hiring Partners
+            </strong></h3>
+        <hr class="hidden-md visible-xs">
+        <div class="row">
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-20">
+                    <img src="https://www.achieversit.com/assets/images/php_development_training.png" style="width: 80%"
+                        alt="cognizant">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/ui_Development_training.png" alt="cognizant">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/angualr_development_training.png" alt="hcl">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/aws_development_training.png" alt="accenture">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-20">
+                    <img src="https://www.achieversit.com/assets/images/boostrap_development%20.png" alt="oracle">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/react_development_training.png" alt="ibm">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/software_development_training.png" alt="amazon">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/software_training_courses.png" alt="visa">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20 hidden-pro">
+                <div class=" trainer-company b-shadow text-center" style="padding: 20px;">
+                    <img src="https://www.achieversit.com/assets/images/python_development_traning.png"
+                        style="width: 80%" alt="wipro">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/web_development_training.png" alt="flipkart">
+                </div>
+            </div>
+            <div class="col-md-3 col-6 pad-20">
+                <div class=" trainer-company b-shadow text-center pad-30">
+                    <img src="https://www.achieversit.com/assets/images/angularjs_training.png" alt="dell">
+                </div>
+            </div>
+            <div class="col-md-3 col-6   pad-20 hidden-pro">
+                <div class=" trainer-company b-shadow text-center" style="padding: 20px;">
+                    <img src="https://www.achieversit.com/assets/images/angular_training.png" alt="genpact"
+                        style="width: 80%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-box rotated position hidden-xs">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#contact-model"
+            class="btn btn-orangered btn-lg turned-button text-white" style="background-color:rgb(255, 102, 0);">CONTACT
+            US</a>
+    </div>
+    </div>
+
+
+
+
+    <div class="container">
+        <h3 class="padLR-10 mB-30 text-center mB-xs-10 mb-sm-0"><strong class="know-us-font"
+                style="color: #142453;">Students Frequently Asked Questions
+            </strong></h3>
+        <div class="accordion accordion-flush my-4" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                        aria-expanded="false" aria-controls="flush-collapseOne">
+                        <b> We Readily Embrace Newness</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Technology is not standing anywhere, it’s moving; and it’s moving fast.
+                        To match its pace, you need to seek GLT assistance. We provide latest Class Room & online live
+                        instructor led courses like AWS, Python, Data Science, AI, Machine Learning, Hadoop, Devops,
+                        Angular, Java, Oracle and SAS. All our course offerings are in sync with industry demands.
+                        Hence, by gaining expertise in them, you make yourself industry ready, that too without really
+                        attending any brick and mortar technology school.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm  bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <b>We cater to your learning needs, irrespective of your location</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">We are an Class Room & online training provider and love to dismiss the
+                        importance of space and time in the process of learning. Our students are
+                        scattered across Bangalore, Chennai etc.
+                        So, we happily enhance your learning experience regardless of your home address.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                        aria-expanded="false" aria-controls="flush-collapseThree">
+                        <b> You receive training from a great faculty</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">What betters your learning experience and what turns it sour? Yes, it’s
+                        the faculty that trains you. At GLT, we understand and acknowledge this, and make sure whatever
+                        you learn, you learn it from overly knowledgeable people having 15+ years of industry experience
+                        to their credit. Also, our trainers are Certified Experts. That means, there is no risk
+                        involved!</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                        aria-expanded="false" aria-controls="flush-collapseThree">
+                        <b>By enrolling yourself in one of our courses, you expose yourself to a cross</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Disciplinary experience and an extensive project-based learning. We
+                        train you with such excellence that you feel confident while applying the principles learnt to
+                        real-world scenarios.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                        aria-expanded="false" aria-controls="flush-collapseThree">
+                        <b> Study on your own schedule</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseFive" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">You probably wish to take up a Class Room & Live online IT course
+                        because of time constraints. Well, if that’s the case, you need not look beyond GLT. We offer
+                        self paced courses that don’t bind you with time commitments. So, isn’t it a great idea to
+                        receive certification for a course you learnt at your own convenience? Why not!</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                        aria-expanded="false" aria-controls="flush-collapseThree">
+                        <b>Who can benefit?</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Irrespective of who and what you are- an individual IT enthusiast or a
+                        corporate house, you can avail of our training facilities. We have been offering Corporate
+                        Training for Companies quite successfully. And many enterprises- big and small- have benefitted
+                        from the Corp training we provide. If you are an individual, then you are going to love the one
+                        to one attention, we so willingly give our trainees.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed my-1 text-uppercase shadow-sm bg-body-tertiary rounded"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven"
+                        aria-expanded="false" aria-controls="flush-collapseThree">
+                        <b>Why Global LifeTech Academy[GLT]?</b>
+                    </button>
+                </h2>
+                <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Because we are the best! Our focus has never shifted off student
+                        success. And we do every bit to provide training in a deeply nurturing environment, wherein you
+                        realise your learning is being well taken care of.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section id="contact" class="contact"> -->
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title text-center">
+            <h3 class="padLR-10 mB-30 text-center mB-xs-10 mb-sm-0"><strong class="know-us-font"
+                    style="color: #142453;">Contact
+                </strong></h3>
+            <p>Request for online & classroom training quotation
+                <br><strong>Feel free to touch with us!</strong>
+            </p>
+        </div>
+
+        <div class="row shadow-lg mb-5 bg-body p-3 rounded d-flex justify-content-center align-items-center"
+            style="border-top: 2px solid #2de154;border-bottom: 2px solid #2fe45c;">
+
+            <div class="col-lg-6 d-flex align-items-stretch shadow p-3 mb-5 bg-body-tertiary rounded"
+                style="margin-right: 10px;">
+                <div class="info">
+                    <div class="address">
+                        <!-- <i class="bi bi-geo-alt"></i>
+                  <i class="fa-solid fa-location-dot"></i> -->
+                        <h4 style="color: #142453;"><strong>
+                                Location:
+                            </strong></h4>
+                        <p>Patanjali Stores, Above CANFIN house Finance, KRISHNA TOWERS, Redcoin Technology building,
+                            Bengaluru, Karnataka 560037</p>
+
+
+                    </div>
+
+                    <div class="email">
+                        <i class="bi bi-envelope"></i>
+                        <h4 style="color: #142453;">
+                            <strong>Email:</strong>
+                        </h4>
+                        <p>globallifetech@gmail.com</p>
+                    </div>
+
+                    <div class="phone">
+                        <i class="bi bi-phone"></i>
+                        <h4 style="color: #142453;">
+                            <strong>
+                                Call:
+                            </strong>
+                        </h4>
+                        <p>+91 8618561276 </p>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.01328929289872!2d77.70084955868447!3d12.958241694515412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1232dffb9813%3A0xbbb1bfd59213dcd6!2sKrishna%20Tower%2C%20Outer%20Ring%20Rd%2C%20Aswath%20Nagar%2C%20Marathahalli%2C%20Bengaluru%2C%20Karnataka%20560037!5e0!3m2!1sen!2sin!4v1701691117315!5m2!1sen!2sin"
+                        frameborder="0" style="border:0; width: 100%; height: 260px;" allowfullscreen></iframe>
+                    <!-- order:0; width: 100%; height: 290px;" allowfullscreen></iframe> -->
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch p-3 shadow p-3 mb-5 bg-body-tertiary rounded">
+                <form onsubmit="IndexImpressesQuery(event)" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" class="form-control border" id="index_name2" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Your Mobile</label>
+                            <input type="number" class="form-control border" name="mobile" id="index_mobile2" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Email</label>
+                        <input type="email" class="form-control border" name="subject" id="index_email2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Course Name</label>
+                        <textarea class="form-control border" name="message" rows="10" id="index_course2"
+                            required></textarea>
+                    </div>
+                    <!-- <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div> -->
+                    <div class="text-center"><button type="submit" class="btn text-white abc">Send Message</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- </section> -->
+
+
+
+    <footer class="page-footer font-small  pad-30">
+        <!-- Footer Links -->
+        <div class="row">
+            <div class="col-md-3 col-sm-12" style="margin-top:20px;">
+                <div class="mB-10">
+
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Global LifeTech</h5>
+                </div>
+                <div>
+                    <p class="text-light justify footer-font">Global LifeTech - Provides a wide group of
+                        opportunities
+                        for freshers and Experienced candidate who can develop their skills and build their
+                        career
+                        opportunities across multiple Companies.</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-3 col-sm-6  mx-auto pad-20  ">
+                        <!-- Links -->
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 footer-font">COMPANY</h5>
+                        <ul class="list-unstyled m-20" style="cursor: pointer;">
+                            <li>
+                                <a>Home</a>
+                            </li>
+                            <li>
+                                <a>Placements</a>
+                            </li>
+                            <li>
+                                <a>Corporate
+                                    Training</a>
+                            </li>
+
+                            <li>
+                                <a>Contact US</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr class="clearfix w-100 d-md-none">
+                    <div class="col-md-4 col-sm-6 mx-auto pad-20">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">TRENDING COURSES</h5>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a href="">Python FullStack Web Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Java FullStack Web Development
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">Devops Master Program
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">AWS Master Program</a>
+                            </li>
+                            <li>
+                                <a href="">DataScience Master Program</a>
+                            </li>
+                            <!-- <li>
+                                        <a href="Devops_page.html">AWS & Devops
+                                        </a>
+                                    </li> -->
+
+
+                        </ul>
+                    </div>
+                    <!-- Grid column -->
+                    <hr class="clearfix w-100 d-md-none ">
+                    <div class="col-md-4 col-sm-12 pad-10">
+                        <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">CONTACT INFO</h5>
+                        <ul class="list-unstyled text-white justify">
+                            <li class="d-flex">
+                                <span class="pad-10 font-12"><i class="fas fa-map-marked-alt font-20"></i></span><span
+                                    class="pad-5 font-15"> Patanjali Stores, Above CANFIN house Finance, KRISHNA TOWERS, Redcoin
+                                    Technology building, Bengaluru, Karnataka 560037</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="pad-10 font-12"><i class="fas fa-phone-volume font-20"></i>
+                                </span><span class="pad-10 font-15"> India : +91 8618561276</span>
+                            </li>
+                            <li class="d-flex">
+                                <span class="pad-10 font-12"><i
+                                        class="fas fa-envelope-open-text font-20"></i></span><span
+                                    class="pad-10 font-15"> globallifetech@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer Links -->
+        <div class="col-md-12  social-icons">
+            <ul class="social-network social-circle">
+                <!-- <li><a href="https://www.facebook.com/AchieversITTrainings/" rel="nofollow" class="icoFacebook"
+                        title="Facebook" target="_blank"><i class="fab fa-facebook-f "></i></a></li> -->
+                <li><a href="https://www.instagram.com/global_lifetech_academy/" rel="nofollow" class="icoFacebook"
+                        title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/global-lifetech-academy-1812592a3/" rel="nofollow"
+                        class="icoLinkedin" title="Linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <!-- <li><a href="" class="iconTwitter" title="Twitter" rel="nofollow"
+                        target="_blank"><i class="fab fa-twitter"></i></a></li> -->
+
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright pt-20"
+            style="display:flex;justify-content:center;align-items:center;margin-bottom:3%;flex-wrap:wrap">
+
+            <div class=" pad-20 text-lightgray  copy-rights ">Copyright © 2021 Global LifeTech Pvt Ltd. All
+                Rights Reserved
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="fixed-footer pad-10  d-flex text-center sticky-footer" style="justify-content: center">
+        <!-- call -->
+        <div class="d-flex-0">
+            <a class="mx-auto" href="tel:+918618561276" target="_blank">
+                <i class="fas fa-phone-volume font-40  font-xs-30 font-sm-30 text-lightblue"></i>
+                <span class="font-20 text-white font-sm-15 hidden-xs">Call us on :+91 8618561276</span>
+            </a>
+        </div>
+        <!-- mail -->
+        <div class="d-flex-0">
+            <a class="mx-auto" href="https://www.instagram.com/global_lifetech_academy/">
+                <i class="fab fa-instagram font-40 font-xs-30 font-sm-30 text-orangered"></i>
+                <span class="font-20 text-white hidden-xs font-sm-15">Follow Instagram</span>
+            </a>
+        </div>
+        <div class="d-flex-0">
+            <a href="https://api.whatsapp.com/send?phone=+918618561276&amp;text='Hi, I am looking for technical Training, Kindly give me more information ?'"
+                class="mx-auto" target="_blank">
+                <i class="fab fa-whatsapp font-40 font-xs-30 font-sm-30  text-light-green"></i><span
+                    class="hidden-xs font-20 text-white">&nbsp;&nbsp;&nbsp;Chat With US!</span>
+            </a>
+        </div>
+    </div>
+
+
+    <!--CONTACT US MODAL-->
+    <div id="contact-model" class="modal fade" role="dialog">
+        <div class="modal-dialog" style="width: 300px;padding: 0;">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title mx-auto know-us-font " id="leadform"><strong>Request for Classroom & Online
+                            Training</strong></h4>
+                    <!-- <button type="button" class="close" data-dismiss="modal"  style="margin-left: 0px">×</button> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form onsubmit="IndexContactQuery(event)">
+                        <input type="hidden" class="title" name="lead" value=''>
+                        <div class="col-md-12 mb-2 no-padding">
+                            <!-- <label for="validationName">NAME</label> -->
+                            <input type="text" class="form-control" id="index_name1" placeholder="First name" value=""
+                                minlength="4" maxlength="30" required>
+                        </div>
+                        <div class="col-md-12 mb-2 no-padding">
+                            <!-- <label for="validationEmail">EMAIL</label> -->
+                            <input type="email" class="form-control" id="index_email1" placeholder="Email" value=""
+                                name="validationEmail" required>
+                        </div>
+                        <div class="col-md-12 mb-2 no-padding">
+                            <!-- <label for="validationPhone">Contact Number</label> -->
+                            <input type="phone" class="form-control" id="index_mobile1" name="validationPhone"
+                                placeholder="Conatct Number" value="" required>
+                            <!-- pattern="^[6789]\d{9}$" -->
+                        </div>
+
+                        <div class="col-md-12 mb-2 no-padding">
+                            <!-- <label for="user_msg">Course</label> -->
+                            <textarea class="form-control" id="index_course1" rows="2" placeholder="Enter course name"
+                                id="validationMessage" name="validationMessage" required></textarea>
+                        </div>
+                        <div class="col-md-12 mb-2 no-padding">
+
+                            <select id="index_training1" class="form-control  form-select-sm"
+                                aria-label="Small select example">
+                                <option selected>Select Training Type</option>
+                                <option value="ClassRoom Training">ClassRoom Training</option>
+                                <option value="Online Training">Online Training</option>
+                                <!-- <option value=""></option> -->
+                            </select>
+                        </div>
+                        <div class="col-md-12 mb-2 no-padding">
+                            <!-- <label for="validationPhone">Contact Number</label> -->
+                            <!-- <input type="phone" class="form-control" id="index_location1"
+                                placeholder="Training Location" required> -->
+                                <select id="index_location1" aria-placeholder="Select Location"  class="form-control  form-select-sm" aria-label="Small select example">
+                                    <option selected>Select Location</option>
+                                    <option value="Marathahalli - Bengaluru">Marathahalli - Bengaluru</option>
+                                    <option value="BTM Layout - Bengaluru">BTM Layout - Bengaluru</option>
+                                    <!-- <option value=""></option> -->
+                                  </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-lg btn-orangered btn-block text-white abc"
+                            id="btnContactUs">Get Quotes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--CONTACT US MODAL-->
+
+
+
+
+    <!-- Popup form -->
+    <div class="login-popup">
+        <div class="box" id="box">
+
+            <div class="form">
+                <div class="close">&times;</div>
+                <h5><strong>Request for Classroom & Online Training</strong></h5>
+                <form onsubmit="IndexPopupQuery(event)">
+                    <input type="hidden" class="title" name="lead" value=''>
+                    <div class="col-md-12 mb-3 no-padding">
+                        <!-- <label for="validationName">NAME</label> -->
+                        <input type="text" class="form-control" id="index_name3" placeholder="First name" required>
+                    </div>
+                    <div class="col-md-12 mb-3 no-padding">
+                        <!-- <label for="validationEmail">EMAIL</label> -->
+                        <input type="email" class="form-control" id="index_email3" placeholder="Email" required>
+                    </div>
+                    <div class="col-md-12 mb-3 no-padding">
+                        <!-- <label for="validationPhone">Contact Number</label> -->
+                        <input type="phone" class="form-control" id="index_mobile3" placeholder="Conatct Number"
+                            required>
+
+                    </div>
+                    <div class="col-md-12 mb-3 no-padding">
+                        <!-- <label for="validationPhone">Contact Number</label> -->
+                        <input type="phone" class="form-control" id="index_course3" placeholder="Course" required>
+
+                    </div>
+                    <div class="col-md-12 mb-3 no-padding">
+
+                        <select id="index_training3" class="form-control  form-select-sm"
+                            aria-label="Small select example">
+                            <option selected>Select Training Type</option>
+                            <option value="ClassRoom Training">ClassRoom Training</option>
+                            <option value="Online Training">Online Training</option>
+                            <!-- <option value=""></option> -->
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-3 no-padding">
+                        <!-- <label for="validationPhone">Contact Number</label> -->
+                        <!-- <input type="phone" class="form-control" id="index_location3"
+                            placeholder="Training Location"required> -->
+
+
+                        <select id="index_location3" aria-placeholder="Select Location"
+                            class="form-control  form-select-sm" aria-label="Small select example">
+                            <option selected>Select Location</option>
+                            <option value="Marathahalli - Bengaluru">Marathahalli - Bengaluru</option>
+                            <option value="BTM Layout - Bengaluru">BTM Layout - Bengaluru</option>
+                            <!-- <option value=""></option> -->
+                        </select>
+
+                    </div>
+
+
+
+                    <button type="submit" style="margin: 0;" class="btn abc" id="button_tag">Get Quotes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- firebase -->
+    <!-- https://smtpjs.com/v3/smtp.js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-database-compat.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
